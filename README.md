@@ -102,12 +102,12 @@ python3 src/authproxy.py --help
 │ Magento           │ PHPSESSID=... admin=...                 │
 └─────────────────────────────────────────────────────────────┘
 
-## Acknowledgments
+Acknowledgments
 
-- Built on top of **[mitmproxy](https://mitmproxy.org/)** — an amazing interactive HTTPS proxy.
-- Thanks to the mitmproxy team for creating such a powerful and flexible tool.
-- Inspired by the need to keep sessions alive during long security scans.
+    Built on top of mitmproxy — an amazing interactive HTTPS proxy.
 
----
+    Thanks to the mitmproxy team for creating such a powerful and flexible tool.
 
-⭐ **If you find this tool useful, consider giving it a star on GitHub!**
+    Inspired by the need to keep sessions alive during long security scans.
+
+⭐ If you find this tool useful, consider giving it a star on GitHub!
