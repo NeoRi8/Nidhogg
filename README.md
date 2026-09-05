@@ -83,12 +83,16 @@ curl http://127.0.0.1:8890/cookies                      # view
 curl -X PUT -d "A=1;B=2" http://127.0.0.1:8890/cookies  # update without restarting
 ```
 
+markdown
+
 ## Full List of Flags
 
 ```bash
 python3 src/authproxy.py --help
 
-## Cookie Examples
+Cookie Examples
+text
+
 ┌─────────────────────────────────────────────────────────────┐
 │ CMS/Framework     │ Cookie                                  │
 ├─────────────────────────────────────────────────────────────┤
