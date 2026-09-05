@@ -83,7 +83,7 @@ curl http://127.0.0.1:8890/cookies                      # view
 curl -X PUT -d "A=1;B=2" http://127.0.0.1:8890/cookies  # update without restarting
 ```
 
-## Full List of Flags/Acknowledgments
+## Full List of Flags/Cookie Example/Acknowledgments
 
 ```bash
 python3 src/authproxy.py --help
