@@ -84,6 +84,7 @@ curl -X PUT -d "A=1;B=2" http://127.0.0.1:8890/cookies  # update without restart
 ```
 
 Cookie Examples
+
 ┌─────────────────────────────────────────────────────────────┐
 │ CMS/Framework     │ Cookie                                  │
 ├─────────────────────────────────────────────────────────────┤
@@ -96,6 +97,7 @@ Cookie Examples
 │ Drupal            │ SESS...=...                             │
 │ Magento           │ PHPSESSID=... admin=...                 │
 └─────────────────────────────────────────────────────────────┘
+
 
 python3 src/authproxy.py --help
 
