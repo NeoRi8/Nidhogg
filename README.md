@@ -84,19 +84,18 @@ curl -X PUT -d "A=1;B=2" http://127.0.0.1:8890/cookies  # update without restart
 ```
 
 Cookie Examples
-
-Common cookie names for popular CMS/frameworks:
-CMS/Framework	Cookie
-1C-Bitrix	PHPSESSID=...; BITRIX_SM_UIDH=...
-WordPress	wordpress_logged_in_...; wordpress_sec_...
-Laravel	laravel_session=...
-Django	sessionid=...
-Node.js/Express	connect.sid=...
-Java/Spring	JSESSIONID=...
-Drupal	SESS...=...
-Magento	PHPSESSID=...; admin=...
-Full List of Flags
-bash
+┌─────────────────────────────────────────────────────────────┐
+│ CMS/Framework     │ Cookie                                  │
+├─────────────────────────────────────────────────────────────┤
+│ 1C-Bitrix         │ PHPSESSID=...;BITRIX_SM_UIDH=...        │
+│ WordPress         │ wordpress_logged_in_...;wordpress_sec_..│
+│ Laravel           │ laravel_session=...                     │
+│ Django            │ sessionid=...                           │
+│ Node.js/Express   │ connect.sid=...                         │
+│ Java/Spring       │ JSESSIONID=...                          │
+│ Drupal            │ SESS...=...                             │
+│ Magento           │ PHPSESSID=... admin=...                 │
+└─────────────────────────────────────────────────────────────┘
 
 python3 src/authproxy.py --help
 
