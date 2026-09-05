@@ -83,8 +83,12 @@ curl http://127.0.0.1:8890/cookies                      # view
 curl -X PUT -d "A=1;B=2" http://127.0.0.1:8890/cookies  # update without restarting
 ```
 
-Cookie Examples
+## Full List of Flags
 
+```bash
+python3 src/authproxy.py --help
+
+## Cookie Examples
 ┌─────────────────────────────────────────────────────────────┐
 │ CMS/Framework     │ Cookie                                  │
 ├─────────────────────────────────────────────────────────────┤
@@ -97,16 +101,3 @@ Cookie Examples
 │ Drupal            │ SESS...=...                             │
 │ Magento           │ PHPSESSID=... admin=...                 │
 └─────────────────────────────────────────────────────────────┘
-
-
-python3 src/authproxy.py --help
-
-Acknowledgments
-
-    Built on top of mitmproxy — an amazing interactive HTTPS proxy.
-
-    Thanks to the mitmproxy team for creating such a powerful and flexible tool.
-
-    Inspired by the need to keep sessions alive during long security scans.
-
-⭐ If you find this tool useful, consider giving it a star on GitHub!
