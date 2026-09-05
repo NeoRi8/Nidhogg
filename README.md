@@ -1,4 +1,4 @@
-# AuthProxy
+# AuthProxy (Nidhogg)
 
 Keeps the authorized session alive for any CLI scanners. (`katana`, `nuclei`,
 `sqlmap`, `dalfox`, `ffuf`, `httpx`, `curl` …). A local proxy based on mitmproxy that:
