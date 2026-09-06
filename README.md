@@ -11,7 +11,7 @@ Keeps the authorized session alive for any CLI scanners. (`katana`, `nuclei`,
 
 ## Quick Start
 
-### Option 1 — pip (recommended)
+### Option 1 — pip
 ```bash
 pip3 install --break-system-packages mitmproxy
 python3 src/authproxy.py --target https://site.com --cookie "PHPSESSID=abc;TOKEN=xyz"
@@ -20,10 +20,13 @@ python3 src/authproxy.py --target https://site.com --cookie "PHPSESSID=abc;TOKEN
 ### Option 2 — Docker
 
 ```bash
-docker build -t authproxy .
+docker pull neori8/authproxy:latest 
 docker run --rm -it -p 8888:8888 -p 8890:8890 \
   -v ~/.mitmproxy:/root/.mitmproxy \
-  authproxy --target https://site.com --cookie "PHPSESSID=abc;TOKEN=xyz" --host 0.0.0.0
+  neori8/authproxy \
+  --target https://httpbin.org \
+  --cookie "SESSION=test123" \
+  --host 0.0.0.0
 ```
 
 > `-v ~/.mitmproxy:/root/.mitmproxy` places the mitmproxy CA directly into your `~/.mitmproxy/`
