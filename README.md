@@ -17,7 +17,7 @@ pip3 install --break-system-packages mitmproxy
 python3 src/authproxy.py --target https://site.com --cookie "PHPSESSID=abc;TOKEN=xyz"
 ```
 
-### Вариант 2 — Docker
+### Option 2 — Docker
 
 ```bash
 docker build -t authproxy .
