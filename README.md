@@ -25,7 +25,7 @@ docker run --rm -it -p 8888:8888 -p 8890:8890 \
   -v ~/.mitmproxy:/root/.mitmproxy \
   neori8/authproxy \
   --target https://httpbin.org \
-  --cookie "SESSION=test123" \
+  --cookie "PHPSESSID=abc;TOKEN=xyz" \
   --host 0.0.0.0
 ```
 
